@@ -152,8 +152,54 @@
 // Потрібно додати перевірку, що функція отримує саме числа, в іншому випадку
 // повертати з функції рядок - 'Not a number!'.
 
-function min(a, b) {
-   return Math.min(a, b);
-    }
-min(7, 15)
+// function min(a, b) {
+//     if (typeof a !== "number" || typeof b !== "number") {
+//         return "Not a number!";
+//     } 
+//     return Math.min(a,b);
+// }
+
+
+// console.log(min(105,7))
+
+
+
+
+
+// 9. Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true, 
+// якщо параметр age більше чи дорівнює 18.
+// В іншому випадку вона запитує підтвердження через confirm 
+// і повертає його результат (true/false).
+
+
+// function isAdult(age) {
+//     if (age > 18) {
+//         console.log("true");
+//     } else {
+//         confirm("Are you agree?")
+//     }
+// }
+// console.log(isAdult(19))
+
+
+
+// 10. Напишіть функцію fizzBuzz(num), яка приймає число і перевіряє кожне число від 1 до num:
+// Якщо число ділитися  без остачі на 3 - виводить в консоль 'fizz',
+// якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
+// якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
+
+// function fizzBuzz(num) {
+//     for (let i = 1; i < num; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log(i, "fizzbuzz");
+//         }
+//         else if (i % 3 === 0) {
+//                 console.log(i, "fizz");
+//             } else if (i % 5 === 0) {
+//                 console.log(i, "buzz");
+//             }
+//         }
+// }
+    
+// fizzBuzz(16)
 
