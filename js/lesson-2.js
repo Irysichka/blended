@@ -202,43 +202,35 @@
 // }
 
 // calculator.read(4, 5)
-// console.log(calculator.sum)
+// console.log(calculator.sum())
+// console.log(calculator.mult())
 
 
-const calculator = {
-  a: null,
-  b: null,
+// 10. Напишіть функцію calcTotalPrice(fruits, fruitName),
+// яка приймає массив об'єктів (fruits) і рядок з назвою фрукта (fruitName).
+// Функція рахує і повертає загальну вартість фрукта
+// з таким ім'ям, ціною та кількістю з об'єкта.
 
-  read(a, b) {
-    this.a = a;
-    this.b = b;
-  },
+// Зверніть увагу, що в масиві може бути кілька обʼєктів з однаковою 
+// назвою фрукта, це також треба урахувати.
 
-  exist() {
-    return this.a !== null && this.b !== null;
-  },
+// function calcTotalPrice(fruits, fruitName) {
+//   for (const fruit of fruits) {
+//     if (fruit.name === fruitName) {
+//       return fruit.price * fruit.quantity;
+//     }
+//    }
+//  }
 
-  sum() {
-    if (!this.exist()) {
-      return 'No such properties';
-    }
-    return this.a + this.b;
-  },
 
-  mult() {
-    if (!this.exist()) {
-      return 'No such properties';
-    }
-    return this.a * this.b;
-  }
-};
-calculator.read(5, 3);
-console.log(calculator.sum());   // → 8
-console.log(calculator.mult());  // → 15
+// const fruits = [
+//     { name: "Яблуко", price: 45, quantity: 7 },
+//     { name: "Апельсин", price: 60, quantity: 4 },
+//     { name: "Банан", price: 125, quantity: 8 },
+//     { name: "Груша", price: 350, quantity: 2 },
+//     { name: "Виноград", price: 440, quantity: 3 },
+//     { name: "Банан", price: 125, quantity: 3 },
+// ];
+  
 
-const emptyCalc = {
-  ...calculator,
-  a: null,
-  b: null
-};
-console.log(emptyCalc.sum());    // → 'No such properties'
+// console.log(calcTotalPrice(fruits, "Банан"))
