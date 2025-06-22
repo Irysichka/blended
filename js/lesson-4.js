@@ -79,20 +79,35 @@ const nextElement = findTitle.closest("li")
 nextElement.remove()
 
 // 17 - після заголовка h1 (перед списком) додай новий елемент p і задай йому наступний текст: "Об'єктна модель документа (Document Object Model)"
-
+const par = document.createElement("p");
+par.textContent = "Об'єктна модель документа (Document Object Model)";
+list.prepend(par);
 
 // 18 - додай новий елемент списку у кінець списка, його заголовок це - "Властивість innerHTML" а опис (р) - "Ще один спосіб створити DOM-елементи і помістити їх в дерево - це використовувати рядки з тегами і дозволити браузеру зробити всю важку роботу". тобто, потрібно створити елемент LI потім наповнити H3 та P і готову LI закинути у кінець списку
+
+// const newItem = document.createElement("li");
+// const newItemList = document.createElement("h3")
+// newItemList.textContent = "Властивість innerHTML";
+// const newText = document.querySelector("p");
+// newText.textContent = "Ще один спосіб створити DOM-елементи і помістити їх в дерево - це використовувати рядки з тегами і дозволити браузеру зробити всю важку роботу";
+
+// newItem.appendChild(newItemList);
+// newItem.appendChild(newText);
+
+// list.appendChild(newItem);
+
 // 19 - зроби це саме, але використовуй шаблонні рядки та метод insertAdjacentHTML()
+const newItemmList = `
+<li data-topic="navigation">
+                <h3>Властивість innerHTML</h3>
+                <p>
+                    Ще один спосіб створити DOM-елементи і помістити їх в дерево - це використовувати рядки з тегами і дозволити браузеру зробити всю важку роботу.
+                </p>
+
+`
+list.insertAdjacentHTML("beforeend", newItemmList)
 // 20 - очисти список
-
-
-
-
-
-
-
-
-
+list.remove();
 
 // 2.
 
@@ -104,11 +119,20 @@ nextElement.remove()
 
 // const randomNumber = () => Math.floor(Math.random() * 100) + 1;
 
+// const container = document.querySelector(".number-container");
 
-
-
-
-
+// for (let i = 0; i < 100; i++){
+//     const block = document.createElement("div");
+    
+//     block.classList.add("numberContainer");
+//     block.textContent = randomNumber();
+//     if (block.textContent % 2 === 0) {
+//         block.classList.add("even")
+//     } else {
+//         block.classList.add("odd")
+//     }
+//     container.appendChild(block);
+// }
 
 
 // 3.
