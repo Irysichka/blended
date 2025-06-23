@@ -126,14 +126,6 @@ span {
 }
 
 
-.even{
-background-color: green;
-}
-
-.odd{
-background-color: yellow;
-}
-
 .number-container {
     display: flex;
     flex-wrap: wrap;
