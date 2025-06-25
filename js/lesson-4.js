@@ -9,7 +9,7 @@
 // console.log(title);
 
 // // 3 - отримай елемент class="list" і виведи його в консоль;
-const list = document.querySelector(".list");
+// const list = document.querySelector(".list");
 // console.log(list);
 
 // // 4 - отримай всі елементи з атрибутом data-topic і виведи їх в консоль;
@@ -242,30 +242,30 @@ list.remove();
 // При кліку на кнопку "Збільшити" - квадрат стає більшим на 20 пікселів.
  
 
-const decrease = document.querySelector(".js-decrease");
-const increase = document.querySelector(".js-increase");
-const box = document.querySelector(".box")
+// const decrease = document.querySelector(".js-decrease");
+// const increase = document.querySelector(".js-increase");
+// const box = document.querySelector(".box")
 
-decrease.addEventListener("click", decreaseClick);
-increase.addEventListener("click", increaseClick);
+// decrease.addEventListener("click", decreaseClick);
+// increase.addEventListener("click", increaseClick);
 
-let size = 50;
+// let size = 50;
 
-function decreaseClick(event) {
-    event.preventDefault();
-        size -= 20;
-       box.style.width = `${size}px`;
-    box.style.height = `${size}px`; 
+// function decreaseClick(event) {
+//     event.preventDefault();
+//         size -= 20;
+//        box.style.width = `${size}px`;
+//     box.style.height = `${size}px`; 
 
     
-}
+// }
 
 
-function increaseClick(event) {
-    event.preventDefault();
-    size += 20;
-    box.style.width = `${size}px`;
-    box.style.height = `${size}px`;
-}
+// function increaseClick(event) {
+//     event.preventDefault();
+//     size += 20;
+//     box.style.width = `${size}px`;
+//     box.style.height = `${size}px`;
+// }
 
 
